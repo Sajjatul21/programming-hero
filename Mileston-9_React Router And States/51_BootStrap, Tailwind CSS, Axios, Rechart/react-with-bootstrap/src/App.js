@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import CartGroup from './components/CartGroup/CartGroup';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <div className="spinner-border text-danger" role="status">
         <span className="visually-hidden">Loading...</span>
       </div>
+      <CartGroup></CartGroup>
     </div>
   );
 }
