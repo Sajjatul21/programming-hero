@@ -14,6 +14,12 @@ function App() {
       <button type="button" className="btn btn-dark">Dark</button>
 
       <button type="button" className="btn btn-link">Link</button>
+
+      <br />
+      <br />
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
   );
 }
