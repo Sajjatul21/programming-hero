@@ -13,14 +13,14 @@ const NavBar = () => {
     ];
     return (
         <nav>
-            {/*   {
-                open? "close icon": "open icon" 
-            } */}
-            {
-                open ? <XMarkIcon onClick={() => setOpen(!open)} className="h-6 w-6" ></XMarkIcon>
-                    :
-                    <Bars3Icon onClick={() => setOpen(!open)} className="h-6 w-6" ></Bars3Icon>
-            }
+            <div>
+                {
+                    open ? <XMarkIcon onClick={() => setOpen(!open)} className="h-6 w-6" ></XMarkIcon>
+                        :
+                        <Bars3Icon onClick={() => setOpen(!open)} className="h-6 w-6" ></Bars3Icon>
+                }
+
+            </div>
             <ul className="md:flex justify-center">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
