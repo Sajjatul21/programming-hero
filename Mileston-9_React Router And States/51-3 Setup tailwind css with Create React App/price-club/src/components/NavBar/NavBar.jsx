@@ -1,3 +1,4 @@
+import Link from "../Link/Link";
 
 const NavBar = () => {
     const routes = [
@@ -9,7 +10,11 @@ const NavBar = () => {
     ];
     return (
         <nav>
-
+            <ul className="md:flex justify-center">
+                {
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
+                }
+            </ul>
         </nav>
     );
 };

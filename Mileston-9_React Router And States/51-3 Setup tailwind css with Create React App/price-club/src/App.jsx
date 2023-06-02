@@ -1,11 +1,13 @@
 
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
 
   return (
     <>
-      <h1 className='text-6xl font-bold'>This is shihab</h1>
+      <NavBar></NavBar>
+      <h1 className='text-4xl font-bold underline text-center'>This is big big header</h1>
     </>
   );
 }
