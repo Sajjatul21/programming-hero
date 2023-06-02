@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { Button, Spinner } from 'react-bootstrap';
+import GridCard from './components/GridCard/GridCard';
+
+
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       <Button variant='danger'>React Button</Button>
       <br />
       <Spinner animation="grow" variant="danger" />
-
+      <GridCard></GridCard>
     </div>
   );
 }
