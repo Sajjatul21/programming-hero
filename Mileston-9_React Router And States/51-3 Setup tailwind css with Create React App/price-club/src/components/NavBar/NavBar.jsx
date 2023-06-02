@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "../Link/Link";
-import { Bars3Icon } from '@heroicons/react/24/solid';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
@@ -13,8 +13,14 @@ const NavBar = () => {
     ];
     return (
         <nav>
-            <Bars3Icon onClick={() => setOpen(!open)} className="h-6 w-6" ></Bars3Icon>
-            <span>{open ? "open" : "close"}</span>
+            {/*   {
+                open? "close icon": "open icon" 
+            } */}
+            {
+                open ? <XMarkIcon onClick={() => setOpen(!open)} className="h-6 w-6" ></XMarkIcon>
+                    :
+                    <Bars3Icon onClick={() => setOpen(!open)} className="h-6 w-6" ></Bars3Icon>
+            }
             <ul className="md:flex justify-center">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
