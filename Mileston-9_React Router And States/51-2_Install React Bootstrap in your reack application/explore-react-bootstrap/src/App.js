@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <button>HTML Button</button>
-      <Button>React Button</Button>
+      <Button variant='danger'>React Button</Button>
 
     </div>
   );
