@@ -1,5 +1,5 @@
 import Link from "../Link/Link";
-import { BeakerIcon } from '@heroicons/react/24/solid';
+import { Bars3Icon } from '@heroicons/react/24/solid';
 
 const NavBar = () => {
     const routes = [
@@ -11,7 +11,7 @@ const NavBar = () => {
     ];
     return (
         <nav>
-            <BeakerIcon className="h-6 w-6 text-blue-500" ></BeakerIcon>
+            <Bars3Icon className="h-6 w-6" ></Bars3Icon>
             <ul className="md:flex justify-center">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
