@@ -8,6 +8,7 @@
   font-weight: 400;
 
 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* 
 a {
   font-weight: 500;
@@ -34,11 +34,11 @@ a:hover {
 }
 
 
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
- 
 
 button {
   border-radius: 8px;
@@ -74,4 +74,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}  */
+} */
