@@ -4,11 +4,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 const NavBar = () => {
     const [open, setOpen] = useState(false);
     const routes = [
-        { id: 1, name: "Home", Path: "/home" },
-        { id: 2, name: "Products", Path: "/products" },
-        { id: 3, name: "Orders", Path: "/orders" },
-        { id: 4, name: "Contact", Path: "/contact" },
-        { id: 5, name: "About", Path: "/about" },
+        { id: 1, name: "Home", path: "/home" },
+        { id: 2, name: "Products", path: "/products" },
+        { id: 3, name: "Orders", path: "/orders" },
+        { id: 4, name: "Contact", path: "/contact" },
+        { id: 5, name: "About", path: "/about" },
     ];
     return (
         <nav className="bg-purple-200">

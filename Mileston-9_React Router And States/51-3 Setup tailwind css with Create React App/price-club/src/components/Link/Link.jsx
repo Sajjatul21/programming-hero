@@ -1,4 +1,5 @@
 const Link = ({ route }) => {
+    console.log(route.path);
     return (
         <div>
             <li className="mr-12"><a href={route.path}>{route.name}</a></li>
