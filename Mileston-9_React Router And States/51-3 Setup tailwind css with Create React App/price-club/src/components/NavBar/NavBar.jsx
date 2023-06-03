@@ -12,9 +12,7 @@ const NavBar = () => {
     ];
     return (
         <div>
-            {/* {
-                open ? "close icon" : "open Icon"
-            } */}
+
             {
                 open ? <XMarkIcon onClick={() => setOpen(!open)} className="h-6 w-6" />
                     :
