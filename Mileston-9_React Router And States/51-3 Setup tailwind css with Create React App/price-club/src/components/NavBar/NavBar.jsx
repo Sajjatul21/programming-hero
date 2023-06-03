@@ -10,9 +10,11 @@ const NavBar = () => {
     ];
     return (
         <div>
-            {
-                routes.map(route=><Link key={route.id} route></Link>)
-            }
+            <ul>
+                {
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
+                }
+            </ul>
         </div>
     );
 };
