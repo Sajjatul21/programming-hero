@@ -11,19 +11,19 @@ const NavBar = () => {
         { id: 5, name: "About", Path: "/home" },
     ];
     return (
-        <div>
+        <nav className="bg-purple-200">
             <div onClick={() => setOpen(!open)} className="h-6 w-6 md:hidden">
                 {
                     open ? <XMarkIcon /> : <Bars3Icon />
                 }
             </div>
 
-            <ul className="md:flex justify-center">
+            <ul className={`bg-purple-200 w-full md:flex justify-center absolute duration-500 ease-in md:static ${open ? 'top-6' : 'top-[-120px]'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
             </ul>
-        </div>
+        </nav>
     );
 };
 
