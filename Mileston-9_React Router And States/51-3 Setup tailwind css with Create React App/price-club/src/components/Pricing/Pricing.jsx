@@ -9,9 +9,11 @@ const Pricing = () => {
     return (
         <div>
             <h1 className="text-5xl font-bold bg-indigo-300 text-white p-12 mt-4">Best Deal of the Town</h1>
-            {
-                pricingOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-            }
+            <div className="grid grid-cols-3 gap-3">
+                {
+                    pricingOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
+                }
+            </div>
         </div>
     );
 };
