@@ -6,7 +6,7 @@ const PriceOption = ({ option }) => {
                 <span className="text-6xl font-bold text-white">{option.price}</span>
                 <span className="text-2xl text-gray-200">/mon</span>
             </h3>
-            <p>{option.name}</p>
+            <p className="text-3xl my-4">{option.name}</p>
         </div>
     );
 };
