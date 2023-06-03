@@ -12,12 +12,12 @@ const NavBar = () => {
     ];
     return (
         <div>
-
-            {
-                open ? <XMarkIcon onClick={() => setOpen(!open)} className="h-6 w-6" />
-                    :
-                    <Bars3Icon onClick={() => setOpen(!open)} className="h-6 w-6" />
-            }
+            <div onClick={() => setOpen(!open)} className="h-6 w-6">
+                {
+                    open ? <XMarkIcon /> : <Bars3Icon />
+                }
+            </div>
+            
             <ul className="md:flex justify-center">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
