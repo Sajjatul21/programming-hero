@@ -10,7 +10,7 @@ const NavBar = () => {
     ];
     return (
         <div>
-            <ul>
+            <ul className="md:flex justify-center">
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
