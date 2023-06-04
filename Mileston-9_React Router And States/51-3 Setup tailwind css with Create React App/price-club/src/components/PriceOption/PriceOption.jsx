@@ -12,7 +12,7 @@ const PriceOption = ({ option }) => {
                 <p className="text-3xl my-4">{option.name}</p>
             </div>
             {
-                features.map(feature => <Feature></Feature>)
+                features.map((feature, idx) => <Feature feature={feature} key={idx}></Feature>)
             }
         </div>
     );
