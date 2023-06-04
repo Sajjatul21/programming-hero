@@ -10,7 +10,7 @@ const PhoneBar = () => {
 
         axios.get('https://openapi.programming-hero.com/api/phones?search=iphone')
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 const phonesLoaded = data.data.data;
                 const phoneData = phonesLoaded.map(phone => {
                     const parts = phone.slug.split("-");
@@ -22,6 +22,7 @@ const PhoneBar = () => {
                     };
                     return singlePhone;
                 });
+                console.log((phoneData));
             });
 
     }, []);
