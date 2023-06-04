@@ -14,6 +14,7 @@ const PriceOption = ({ option }) => {
             {
                 features.map((feature, idx) => <Feature feature={feature} key={idx}></Feature>)
             }
+            <button className="bg-green-500 w-full rounded py-2 mt-4 font-bold text-white ">Buy Now</button>
         </div>
     );
 };
