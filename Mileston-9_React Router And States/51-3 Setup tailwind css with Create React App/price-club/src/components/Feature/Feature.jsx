@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 const Feature = ({ feature }) => {
     return (
@@ -5,7 +7,6 @@ const Feature = ({ feature }) => {
             <CheckCircleIcon className="h-6 w-6 text-green-500" />
             <p className='ml-2'>{feature}</p>
         </div>
-        // 51-8 Use reachart to draw any type of chart using React
     );
 };
 
