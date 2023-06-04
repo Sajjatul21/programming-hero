@@ -14,7 +14,7 @@ const Pricing = () => {
         },
         {
             id: 2, name: "Medium", price: 9.99, features: [
-                "Awesome Features",
+                "Everything on Free",
                 "Extra Features",
                 "Unnecessary Features",
                 "Will never use Features",
@@ -24,7 +24,7 @@ const Pricing = () => {
         },
         {
             id: 3, name: "Premium", price: 19.99, features: [
-                "Awesome Features",
+                "EveryThing on Premium",
                 "Extra Features",
                 "Unnecessary Features",
                 "Will never use Features",
